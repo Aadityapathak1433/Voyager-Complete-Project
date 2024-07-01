@@ -1,0 +1,27 @@
+
+<div class="sign"><div class="container">
+    <h1>Sign In</h1>
+    <hr>
+    <form (ngSubmit)="submitForm(form)" #form="ngForm">
+      <div class="form-group">
+        <label for="name">Username</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your username" name="username" ngModel>
+        <div class="invalid-feedback">Your username must be 4-10 characters long and should start with an alphabet.</div>
+      </div>
+  
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email" ngModel>
+        <div class="invalid-feedback">Please enter a valid email address.</div>
+      </div>
+  
+      <div class="form-group">
+        <label for="phone">Phone no.</label>
+        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" name="phone" ngModel>
+        <div class="invalid-feedback">Please enter a valid phone number.</div>
+      </div>
+  
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>

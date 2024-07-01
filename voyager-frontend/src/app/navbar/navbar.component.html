@@ -1,0 +1,26 @@
+<div id='navbar' class='navbar navbar-bg'>
+    <div class="nav ? 'logo dark' : 'logo'">
+        <h1>Voyager.</h1>
+    </div>
+    <ul class="nav-menu">
+        <a (click)="scrollToSection('hero')">Home</a>
+        <a (click)="scrollToSection('destinations')">Destinations</a>
+        <a (click)="scrollToSection('book')">Book</a>
+        <a (click)="showAboutUs()">About Us</a>
+        <a (click)="scrollToSection('footer')">Contact Us</a>
+        <div  *ngIf="!isVisible">
+            <a (click)="showSignin()">SignUp</a>
+        <a (click)="showlogin()">Login</a>
+        </div>
+    </ul>
+    <div class="nav-icons">
+        <a  (click)="scrollToSection('weather')"><i class="fa fa-cloud" aria-hidden="true"></i></a>    
+    </div>
+</div>
+
+<app-sign-in *ngIf="showin" #sign></app-sign-in>
+<app-log-in *ngIf="showlin" #sign></app-log-in>
+
+<div class="about">
+    <app-about-us *ngIf="showabout"></app-about-us>
+</div>

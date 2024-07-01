@@ -1,0 +1,29 @@
+.cards{
+    display: flex;
+}
+.Container{
+    padding: 10px;
+    width: 240px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 12px;
+    border-style: dotted;
+    border-color: green;
+    text-align: center;
+    margin: 40px;
+    
+}
+.cityname{
+    text-align: center;
+}
+
+.hotelImage{
+    width: 220px;
+    height: 230px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4),0 6px 20px 0 rgba(0,0,0,0.2);
+}
+.hotelImage:hover{
+    
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9),0 6px 20px 0 rgba(0,0,0,0);
+}

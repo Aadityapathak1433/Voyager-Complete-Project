@@ -1,0 +1,53 @@
+/* Navbar styling */
+
+  
+  /* Form container */
+  .container {
+    margin-left: 38%;
+    border-radius: 10%;
+    width: 20%;
+    margin-top: 20px;
+    padding: 40px;
+    align-items: center;  
+  border: 3px solid black;
+  
+  }
+  
+  /* Heading styles */
+  h1 {
+    color: #333;
+  }
+  
+  /* Button styles */
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    margin-left: 37%;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  /* Alert styles */
+  .alert {
+    margin-bottom: 20px;
+  }
+  
+  /* Input and textarea styles */
+  .form-control {
+    margin-bottom: 20px;
+  }
+  
+  .invalid-feedback {
+    display: none;
+    color: red;
+  }
+  
+  .invalid-feedback.active {
+    display: block;
+  }
+  input{
+    margin-left:3px ;
+  }

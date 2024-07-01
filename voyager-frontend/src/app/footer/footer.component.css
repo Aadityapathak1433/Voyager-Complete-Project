@@ -1,0 +1,79 @@
+/* Footer Styles */
+.footer {
+    width: 100%;
+    padding: 2rem 0;
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    height:fit-content;
+}
+
+.footer h3 {
+    color: #1a4db9; /* Adjusted the color to a blue shade */
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+    font-size: 30px;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.footer .social {
+    display: flex;
+    gap: 30px; /* Add spacing between social icons */
+    margin-right: 30px;
+}
+
+.footer .icon {
+    color: #fff; /* Set icon color to white */
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.footer .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer .left,
+.footer .right {
+    flex: 1;
+}
+.footer .left{
+    margin-right: 30px;
+}
+.footer ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer li {
+    padding: 0 1rem; /* Add padding between list items */
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.footer a:hover {
+    color: #1a4db9; /* Change text color on hover */
+}

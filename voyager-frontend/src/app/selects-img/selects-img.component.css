@@ -1,0 +1,46 @@
+.selects {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .item {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border: 1px solid;
+    position: relative;
+  }
+  .item img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(167, 0, 0, 0.9); 
+  }
+  
+  .ovrlay {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 24px;
+    color: #ffffff;
+  }
+  

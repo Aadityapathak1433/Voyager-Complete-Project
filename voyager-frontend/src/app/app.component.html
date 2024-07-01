@@ -1,0 +1,19 @@
+<div class="noadmin" *ngIf="!adminVisible">
+    <app-navbar></app-navbar>
+    <app-hero></app-hero>
+    <app-destination></app-destination>
+    <div class="invi"  *ngIf="isVisible">
+        <app-search></app-search>
+    </div>
+    <app-selects-img></app-selects-img>
+    <div class="invis" *ngIf="isVisible">
+        <app-weather  [defaultLocation]="defaultLocation" (search)="onSearchLocation($event)"></app-weather>
+    </div>
+    <app-footer></app-footer>
+</div>
+
+
+
+<div class="adminComp" *ngIf="adminVisible">
+    <app-admin></app-admin>
+</div>

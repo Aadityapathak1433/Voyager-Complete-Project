@@ -1,0 +1,104 @@
+
+.weatherApp {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  background: linear-gradient(to top, #33ccff 0%, #5651e5 100%);
+}
+.weatherApp:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.weatherApp .search {
+  text-align: center;
+  padding: 1rem;
+}
+
+.weatherApp input {
+  padding: .7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255,255,255, 0.8);
+  color: #201e1e;
+  margin-top: 30px;
+}
+
+.containerr {
+  max-width: 500px;
+  height: 400px;
+  margin: auto;
+  position: relative;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.weatherApp .topp {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.weatherApp .description {
+  position: relative;
+  transform-origin: 0 0;
+}
+
+.weatherApp .base {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(255,255,255, 0.2);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+
+
+
+button {
+    appearance: button;
+    backface-visibility: hidden;
+    background-color: #405cf5;
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 1px inset, rgba(50, 50, 93, .1) 0 2px 5px 0, rgba(0, 0, 0, .07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+    font-size: 100%;
+    height: 44px;
+    line-height: 1.15;
+    margin: 12px 0;
+    outline: none;
+    overflow: hidden;
+    padding-left: 0.8%; 
+    position: relative;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all 0.2s ease, box-shadow 0.08s ease-in;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 8%;
+}
+
+button:disabled {
+    cursor: default;
+}
+
+button:focus {
+    box-shadow: rgba(50, 50, 93, .1) 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 4px;
+} 

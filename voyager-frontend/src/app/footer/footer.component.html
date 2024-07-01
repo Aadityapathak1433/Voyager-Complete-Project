@@ -1,0 +1,35 @@
+<div id ="footer"class='footer'>
+    <div class="container">
+        <div class="top">
+            <h3>Voyager.</h3>
+            <div class="social">
+                <a class='icon' href='#'><i class="fa fa-facebook"></i></a>
+                <a class='icon' href='#'><i class="fa fa-twitter"></i></a>
+                <a class='icon' href='#'><i class="fa fa-instagram"></i></a>
+                <a class='icon' href='#'><i class="fa fa-linkedin"></i></a>
+                <a class='icon' href='#'><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="left">
+                <ul>
+                    <li><a href='\about.html'>Partnerships</a></li>
+                    <li><a href='\about.html'>Careers</a></li>
+                    <li><a href='\about.html'>Newsroom</a></li>
+                    <li><a href='\about.html'>Advertising</a></li>
+                </ul>
+            </div>
+           
+            <div class="right">
+                <ul>
+                    <li><a (click)="showContactus()">Contact Us</a></li>
+                    <li><a href='#'>Terms</a></li>
+                    <li><a href='#'>Policy</a></li>
+                    <li><a href='#'>Privacy</a></li>
+                    <li><a href='#'>Pricing</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<app-contactus *ngIf="showcontact"></app-contactus>

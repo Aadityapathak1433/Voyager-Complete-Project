@@ -1,0 +1,65 @@
+<div id="book" class="search">
+    <div class="container">
+      <div class="left">
+        <h2>LUXURY INCLUDED VACATIONS </h2>
+        <p>
+          Come experience the very pinnacle of luxury North India
+          all-inclusive vacations for all at Resorts. Our luxury beach
+          resorts, set along the most gorgeous tropical settings and exquisite
+          beaches in Rajasthan feature unlimited gourmet dining, unique bars
+          serving premium liquors and wines, and every land and water sport,
+          including complimentary green fees at our golf resorts . If you are
+          planning a wedding, Rajasthan is the leader in North India
+          destination weddings and honeymoon packages.
+        </p>
+        <div class="search-col-2">
+          <div class="box">
+            <div>
+              <img src="../../assets/gold.png" alt="/" style=' margin-right: 1rms; ' />
+            </div>
+            <div>
+              <h3>North India's LEADING</h3>
+              <p>ALL-INCLUSIVE COMPANY </p>
+            </div>
+          </div>
+          <div class="box">
+            <div>
+              <h3>NO ONE INCLUDES MORE PACKAGES</h3>
+              <p>ALL-INCLUSIVE COMPANY </p>
+              <!-- <button  onClick=>View Packages</button> -->
+              <button class="button-9"role="button" (click)="showing()">View Packages</button>
+                <app-inprogress *ngIf="Shows" (hideComponent)="hideInProgress()"></app-inprogress>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <form>
+          <div class="input-wrap">
+            <label>Destination</label>
+            <select (change)="SelectCity($event)">
+              <option value="New Delhi">New Delhi</option>
+              <option value="Punjab">Punjab</option>
+              <option value="Chandigarh">Chandigarh</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="Uttarakhand">Uttarakhand</option>
+              <option value="Rajasthan">Rajasthan</option>
+            </select>
+          </div>
+          <div class="date">
+            <div class="input-wrap">
+              <label>Check-In</label>
+              <input type="date" />
+            </div>
+            <div class="input-wrap">
+              <label>Check-Out</label>
+              <input type="date" />
+            </div>
+          </div>
+          <button class="button-9"role="button" (click)="Available()" >Hotel Availabilities</button>
+
+        </form>
+      </div>
+    </div>
+    <app-cards *ngIf="show" [selectedCity]="cityName"></app-cards>
+  </div>
