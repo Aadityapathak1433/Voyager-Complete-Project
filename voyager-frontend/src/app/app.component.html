@@ -2,11 +2,11 @@
     <app-navbar></app-navbar>
     <app-hero></app-hero>
     <app-destination></app-destination>
-    <div class="invi"  *ngIf="isVisible">
+    <div class="invi"  *ngIf="!isVisible">
         <app-search></app-search>
     </div>
     <app-selects-img></app-selects-img>
-    <div class="invis" *ngIf="isVisible">
+    <div class="invis" *ngIf="!isVisible">
         <app-weather  [defaultLocation]="defaultLocation" (search)="onSearchLocation($event)"></app-weather>
     </div>
     <app-footer></app-footer>
